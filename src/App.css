@@ -1,7 +1,10 @@
 
+@media screen and (width <= 1000px){
+
 
   *{
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
   
@@ -9,7 +12,7 @@
   
   
   body{
-    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg.png");
+    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg1.png");
     background-repeat: no-repeat;
     background-position: center ;
     background-attachment: fixed;
@@ -20,7 +23,7 @@
     overflow: hidden;
     position: relative;
    
-    max-width: 80vw;
+    max-width: 90vw;
     backdrop-filter: blur(20px);
     height: 93vh;
     margin-top: 1.5%;
@@ -178,29 +181,29 @@
     -webkit-text-fill-color: transparent;
   }
   
-  
+
+}
 
 
-
-@media screen and (min-width : 380px) and (max-width : 1100px) 
+@media screen and (min-width : 380px) and (max-width : 550px )
 {
   body{
     height: 100dvh;
-  width: 95dvw;
+  /* width: 99dvw; */
   overflow: hidden;
-    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg1.png");
+    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg.png");
     background-repeat: no-repeat;
     background-position: center ;
     background-attachment: fixed;
-    background-size: 1700px;
+    background-size: 1600px;
     background-color: #0f0f0f;
   }
   #parentpage{
     position: relative;
-    width:95%;
+    width:98%;
     backdrop-filter: blur(20px);
-    height: 93vh;
-    margin-top: 5%;
+    height: 90vh;
+    margin-top: 2%;
     border-radius: 25px;
     box-shadow: inset 1px 1px 15px gray;
     /* margin-inline: auto; */
@@ -229,24 +232,28 @@
     width:95% ;
     position: relative;
     margin-top: 5%;
-    border-radius: 25px;
-    left: 3%;
-    height: 20%;
+    border-radius: 30px;
+    left: 2.5%;
+    height: 18%;
     box-shadow: inset 0px 0px 20px gray;
     border: 0.1px groove;
     font-family: "Kaisei Tokumin", serif;
     color: #f1f1f1;
     background-color: #3e34345e;
   }
+
+  
+
+
   .linkpage > h1{
     font-family: "Cookie", cursive;
     position: absolute;
     text-align: center;
     /* text-shadow: 0.5px 0.5px 5px #0800ef; */
     font-weight: 400;
-    left: 30%;
-    top: 10%;
-    font-size:60px;
+    left: 35%;
+    top: 25%;
+    font-size:55px;
     background: -webkit-linear-gradient(280deg,#909090 30% ,#0007c6 ,#e8e8e8 70% );
     background-clip: text;
     -webkit-background-clip: text;
@@ -264,10 +271,11 @@
   .linkpage > h3{
     font-weight: 400;
     position: relative;
-    top: -15%;
-right: -5%;
-padding-left: 20px;
-font-size: 25px;
+    top: 5%;
+  
+padding-left: 40px;
+
+font-size: 20px;
    text-align: left;
   }
  
@@ -283,11 +291,7 @@ font-size: 25px;
    transition-duration: 500ms;
     
   }
-  span{
-    position: absolute;
-    font-size: 35px;left: 30px;
-    color:whitesmoke;
-  }
+ 
    a{
    
     color: #e8e8e8;
@@ -301,7 +305,7 @@ font-size: 25px;
   .profile{
     width: 120px;
     height: 120px;
-    top: 5%;
+    top: 3%;
     left: 60%;
     box-shadow: inset 1px 1px 20px #b600a7 ;
     border: 1px solid;
@@ -316,8 +320,8 @@ font-size: 25px;
   }
   .clock{
     position: absolute;
-    left: 5%;
-    top: 3%;
+    left: 2%;
+    top: 5%;
     color: #f1f1f1;
     font-size: 75px;
     font-family: "Neonderthaw", cursive;
@@ -330,10 +334,10 @@ font-size: 25px;
   }
   .day{
     position: absolute;
-    left: 30%;
-    top: 18%;
+    left: 20%;
+    top: 20%;
     color: #f1f1f1;
-    font-size: 50px;
+    font-size: 55px;
     font-family: "Neonderthaw", cursive;
     font-weight: 600;
     background: -webkit-linear-gradient(#8a8a8a 50%, #ff63ef 50%);
@@ -343,7 +347,7 @@ font-size: 25px;
      
   }
   .about{
-    line-height: 135%;
+    line-height: 110%;
     position:absolute;
     left: 7%;
     width: 90% ;
@@ -353,7 +357,7 @@ font-size: 25px;
     font-size: clamp(30px,32px,50px);
     font-family: "Cookie", cursive;
     font-weight: 400;
-    text-align: justify;
+    text-align: center;
     word-spacing: 10px;
     background: -webkit-linear-gradient(280deg,#fff5f5 30%,rgb(62, 62, 62), #410046 60%);
     background-clip: text;
