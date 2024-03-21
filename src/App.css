@@ -188,11 +188,11 @@
     height: 100dvh;
   width: 95dvw;
   overflow: hidden;
-    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg.png");
+    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg1.png");
     background-repeat: no-repeat;
     background-position: center ;
     background-attachment: fixed;
-    background-size: 1690px;
+    background-size: 1700px;
     background-color: #0f0f0f;
   }
   #parentpage{
@@ -200,7 +200,7 @@
     width:95%;
     backdrop-filter: blur(20px);
     height: 93vh;
-    margin-top: 10%;
+    margin-top: 5%;
     border-radius: 25px;
     box-shadow: inset 1px 1px 15px gray;
     /* margin-inline: auto; */
