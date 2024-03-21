@@ -1,5 +1,5 @@
 
-@media screen and (min-width : 1110px) and (max-width : 2000px) {
+@media screen and (min-width : 1100px)  {
   *{
     padding: 0%;
     box-sizing: border-box;
@@ -11,7 +11,7 @@
   body{
     background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg1.png");
     background-repeat: no-repeat;
-    background-position: center  ;
+    background-position: center ;
     background-attachment: fixed;
     background-size: cover;
     background-color: #0f0f0f;
