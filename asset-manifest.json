@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Lynkit_X/static/css/main.2d95fae0.css",
+    "main.css": "/Lynkit_X/static/css/main.7bc45e52.css",
     "main.js": "/Lynkit_X/static/js/main.e6c72c1e.js",
     "static/js/453.1beddf5a.chunk.js": "/Lynkit_X/static/js/453.1beddf5a.chunk.js",
     "static/media/bg1.png": "/Lynkit_X/static/media/bg1.7a77dc2a2c3220243e01.png",
     "static/media/profile anime.png": "/Lynkit_X/static/media/profile anime.f91e909a09415e3996c5.png",
     "static/media/bg.png": "/Lynkit_X/static/media/bg.182631c0a61b83805a4c.png",
     "index.html": "/Lynkit_X/index.html",
-    "main.2d95fae0.css.map": "/Lynkit_X/static/css/main.2d95fae0.css.map",
+    "main.7bc45e52.css.map": "/Lynkit_X/static/css/main.7bc45e52.css.map",
     "main.e6c72c1e.js.map": "/Lynkit_X/static/js/main.e6c72c1e.js.map",
     "453.1beddf5a.chunk.js.map": "/Lynkit_X/static/js/453.1beddf5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d95fae0.css",
+    "static/css/main.7bc45e52.css",
     "static/js/main.e6c72c1e.js"
   ]
 }
