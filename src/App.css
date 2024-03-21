@@ -1,5 +1,5 @@
 
-@media screen and (width <= 1000px){
+@media screen and (min-width : 900px){
 
 
   *{
@@ -12,7 +12,7 @@
   
   
   body{
-    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg1.png");
+    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg.png");
     background-repeat: no-repeat;
     background-position: center ;
     background-attachment: fixed;
@@ -188,26 +188,27 @@
 @media screen and (min-width : 380px) and (max-width : 550px )
 {
   body{
-    height: 100dvh;
-  /* width: 99dvw; */
+    height: 90dvh;
+     
+  width: 90dvw;
   overflow: hidden;
     background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg.png");
     background-repeat: no-repeat;
     background-position: center ;
     background-attachment: fixed;
-    background-size: 1600px;
+    background-size: 1700px;
     background-color: #0f0f0f;
   }
   #parentpage{
     position: relative;
-    width:98%;
+    width:93dvw;
     backdrop-filter: blur(20px);
-    height: 90vh;
+    height: 95dvh;
     margin-top: 2%;
     border-radius: 25px;
     box-shadow: inset 1px 1px 15px gray;
     /* margin-inline: auto; */
-    /* left: -5%;  */
+    left: 1%; 
     border: 1px solid rgb(176, 176, 176);
   }
   
@@ -231,10 +232,10 @@
    float: inline-start;
     width:95% ;
     position: relative;
-    margin-top: 5%;
+    margin-top: 35%;
     border-radius: 30px;
     left: 2.5%;
-    height: 18%;
+    height: 16%;
     box-shadow: inset 0px 0px 20px gray;
     border: 0.1px groove;
     font-family: "Kaisei Tokumin", serif;
@@ -252,7 +253,7 @@
     /* text-shadow: 0.5px 0.5px 5px #0800ef; */
     font-weight: 400;
     left: 35%;
-    top: 25%;
+    top: -15%;
     font-size:55px;
     background: -webkit-linear-gradient(280deg,#909090 30% ,#0007c6 ,#e8e8e8 70% );
     background-clip: text;
@@ -271,7 +272,7 @@
   .linkpage > h3{
     font-weight: 400;
     position: relative;
-    top: 5%;
+    top: -30%;
   
 padding-left: 40px;
 
@@ -306,7 +307,7 @@ font-size: 20px;
     width: 120px;
     height: 120px;
     top: 3%;
-    left: 60%;
+    left: 62%;
     box-shadow: inset 1px 1px 20px #b600a7 ;
     border: 1px solid;
     border-radius: 20px;
@@ -320,8 +321,8 @@ font-size: 20px;
   }
   .clock{
     position: absolute;
-    left: 2%;
-    top: 5%;
+    left: 5%;
+    top: -2%;
     color: #f1f1f1;
     font-size: 75px;
     font-family: "Neonderthaw", cursive;
@@ -335,7 +336,7 @@ font-size: 20px;
   .day{
     position: absolute;
     left: 20%;
-    top: 20%;
+    top: 15%;
     color: #f1f1f1;
     font-size: 55px;
     font-family: "Neonderthaw", cursive;
@@ -352,7 +353,7 @@ font-size: 20px;
     left: 7%;
     width: 90% ;
     height: 60%;
-    top: 52%;
+    top: 50%;
     color: #f1f1f1;
     font-size: clamp(30px,32px,50px);
     font-family: "Cookie", cursive;
