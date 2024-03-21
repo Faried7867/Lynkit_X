@@ -1,180 +1,186 @@
-*{
-  padding: 0%;
-  box-sizing: border-box;
-}
 
-
-
-
-body{
-  background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg.png");
-  background-repeat: no-repeat;
-  background-position: center  ;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #0f0f0f;
-}
-#parentpage{
-  overflow: hidden;
-  position: relative;
- 
-  max-width: 80vw;
-  backdrop-filter: blur(20px);
-  height: 93vh;
-  margin-top: 1.5%;
-  border-radius: 25px;
-  box-shadow: inset 1px 1px 15px gray;
-  margin-inline: auto;
-  border: 1px solid rgb(176, 176, 176);
-}
-
-.heading{
-  font-size: 80px;
- text-shadow: 1px 1px 15px  #4f4f4f ;
-  word-spacing: 15px;
-  color: #e8e8e8;
-  position: relative;
-  font-family: "Kaisei Tokumin", serif;
-  left: 5%;
-  background: -webkit-linear-gradient(#ffffff 40%, #1e00c5 75%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
-.linkpage{  
- 
-  width:30%;
-  position: absolute;
-top: 20%;
-  border-radius: 25px;
-  left: 5%;
-  height: 75%;
-  box-shadow: inset 0px 0px 20px gray;
-  border: 0.1px groove;
-  font-family: "Kaisei Tokumin", serif;
-  color: #f1f1f1;
-  background-color: #3e34345e;
-}
-.linkpage > h1{
-  font-family: "Cookie", cursive;
-  position: relative;
-  text-align: center;
-  /* text-shadow: 0.5px 0.5px 5px #0800ef; */
-  font-weight: 400;
-  font-size:105px;
-  background: -webkit-linear-gradient(280deg,#909090 30% ,#0007c6 ,#e8e8e8 70% );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
- 
-}
-
-     
+@media screen and (width >= 1100px) {
+  *{
+    padding: 0%;
+    box-sizing: border-box;
+  }
   
-
-
-
-
-
-.linkpage > h3{
-  font-weight: 400;
-  position: relative;
-word-spacing: 15px;
- text-align: center;
-  padding-top: 5%;
-  font-size: 40px;
- 
-}
-
-h3:hover a {
-  width: 10px;
-  color: #ff00e6;
-  text-shadow: 0px 0px 1px white;
-  border: none;
-  border-radius: 10px;
   
-
- transition-duration: 500ms;
   
-}
-span{
-  position: absolute;
-  font-size: 35px;left: 30px;
-  color:whitesmoke;
-}
- a{
- 
-  color: #e8e8e8;
-  font-weight: 400;
- margin-inline: auto;
- text-decoration: none;
-
-}
-
-
-.profile{
-  width: 250px;
-  height: 250px;
-  top: 5%;
-  left: 75%;
-  box-shadow: inset 1px 1px 20px #b600a7 ;
-  border: 1px solid;
-  border-radius: 50px;
-position: absolute;
-  background-image:url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/profile anime.png") ;
-  background-size: 250px;
-  background-repeat: no-repeat;
-  background-position:  top  left;
-  opacity: 1;
   
-}
-.clock{
-  position: absolute;
-  left: 40%;
-  top: 0%;
-  color: #f1f1f1;
-  font-size: 150px;
-  font-family: "Neonderthaw", cursive;
-  font-weight: 600;
-  background: -webkit-linear-gradient(#480040 30%,#ff72f1 ,#e8e8e8  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  body{
+    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg.png");
+    background-repeat: no-repeat;
+    background-position: center  ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #0f0f0f;
+  }
+  #parentpage{
+    overflow: hidden;
+    position: relative;
    
-}
-.day{
-  position: absolute;
-  left: 55%;
+    max-width: 80vw;
+    backdrop-filter: blur(20px);
+    height: 93vh;
+    margin-top: 1.5%;
+    border-radius: 25px;
+    box-shadow: inset 1px 1px 15px gray;
+    margin-inline: auto;
+    border: 1px solid rgb(176, 176, 176);
+  }
+  
+  .heading{
+    font-size: 70px;
+   text-shadow: 1px 1px 15px  #4f4f4f ;
+    word-spacing: 15px;
+    color: #e8e8e8;
+    position: relative;
+    font-family: "Kaisei Tokumin", serif;
+    left: 5%;
+    background: -webkit-linear-gradient(#ffffff 40%, #1e00c5 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+  .linkpage{  
+   
+    width:30%;
+    position: absolute;
   top: 20%;
-  color: #f1f1f1;
-  font-size: 105px;
-  font-family: "Neonderthaw", cursive;
-  font-weight: 600;
-  background: -webkit-linear-gradient(#52004a 5%,#e8e8e8 40%, #ff46ed 70%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    border-radius: 25px;
+    left: 5%;
+    height: 75%;
+    box-shadow: inset 0px 0px 20px gray;
+    border: 0.1px groove;
+    font-family: "Kaisei Tokumin", serif;
+    color: #f1f1f1;
+    background-color: #3e34345e;
+  }
+  .linkpage > h1{
+    font-family: "Cookie", cursive;
+    position: relative;
+    text-align: center;
+    /* text-shadow: 0.5px 0.5px 5px #0800ef; */
+    font-weight: 400;
+    font-size:105px;
+    background: -webkit-linear-gradient(280deg,#909090 30% ,#0007c6 ,#e8e8e8 70% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
    
+  }
+  
+       
+    
+  
+  
+  
+  
+  
+  .linkpage > h3{
+    font-weight: 400;
+    position: relative;
+  word-spacing: 15px;
+   text-align: center;
+    padding-top: 5%;
+    font-size: 40px;
+   
+  }
+  
+  h3:hover a {
+    width: 10px;
+    color: #ff00e6;
+    text-shadow: 0px 0px 1px white;
+    border: none;
+    border-radius: 10px;
+    
+  
+   transition-duration: 500ms;
+    
+  }
+  span{
+    position: absolute;
+    font-size: 35px;left: 30px;
+    color:whitesmoke;
+  }
+   a{
+   
+    color: #e8e8e8;
+    font-weight: 400;
+   margin-inline: auto;
+   text-decoration: none;
+  
+  }
+  
+  
+  .profile{
+    width: 250px;
+    height: 250px;
+    top: 5%;
+    left: 75%;
+    box-shadow: inset 1px 1px 20px #b600a7 ;
+    border: 1px solid;
+    border-radius: 50px;
+  position: absolute;
+    background-image:url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/profile anime.png") ;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position:  top  left;
+    opacity: 1;
+    
+  }
+  .clock{
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    color: #f1f1f1;
+    font-size: 150px;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#480040 30%,#ff72f1 ,#e8e8e8  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     
+  }
+  .day{
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    color: #f1f1f1;
+    font-size: 105px;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#52004a 5%,#e8e8e8 40%, #ff46ed 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     
+  }
+  .about{
+    line-height: 135%;
+    position:absolute;
+    left: 37%;
+    width: 60% ;
+    height: 60%;
+    top: 40%;
+    color: #f1f1f1;
+    font-size: clamp(320%,60px,70px);
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    text-align: center;
+    word-spacing: 10px;
+    background: -webkit-linear-gradient(280deg,#fff5f5 30%,rgb(62, 62, 62), #410046 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
 }
-.about{
-  line-height: 135%;
-  position:absolute;
-  left: 37%;
-  width: 60% ;
-  height: 60%;
-  top: 40%;
-  color: #f1f1f1;
-  font-size: clamp(320%,60px,70px);
-  font-family: "Cookie", cursive;
-  font-weight: 400;
-  text-align: center;
-  word-spacing: 10px;
-  background: -webkit-linear-gradient(280deg,#fff5f5 30%,rgb(62, 62, 62), #410046 60%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 @media screen and (min-width : 380px) and (max-width : 1100px) 
 {
