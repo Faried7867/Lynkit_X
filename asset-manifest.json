@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Lynkit_X/static/css/main.3c701b7c.css",
+    "main.css": "/Lynkit_X/static/css/main.bfdecfb0.css",
     "main.js": "/Lynkit_X/static/js/main.b199d3c7.js",
     "static/js/453.1beddf5a.chunk.js": "/Lynkit_X/static/js/453.1beddf5a.chunk.js",
     "static/media/profile anime.png": "/Lynkit_X/static/media/profile anime.f91e909a09415e3996c5.png",
     "static/media/bg.png": "/Lynkit_X/static/media/bg.182631c0a61b83805a4c.png",
     "index.html": "/Lynkit_X/index.html",
-    "main.3c701b7c.css.map": "/Lynkit_X/static/css/main.3c701b7c.css.map",
+    "main.bfdecfb0.css.map": "/Lynkit_X/static/css/main.bfdecfb0.css.map",
     "main.b199d3c7.js.map": "/Lynkit_X/static/js/main.b199d3c7.js.map",
     "453.1beddf5a.chunk.js.map": "/Lynkit_X/static/js/453.1beddf5a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c701b7c.css",
+    "static/css/main.bfdecfb0.css",
     "static/js/main.b199d3c7.js"
   ]
 }
