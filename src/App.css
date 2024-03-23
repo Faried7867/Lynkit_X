@@ -27,7 +27,7 @@
   .island::before{
     content: "HI";
     color: #909090;
-    font-size:50px ;
+    font-size:30px ;
    text-align: center;
    
     
@@ -40,9 +40,9 @@
     font-family: 'Times New Roman', Times, serif;
     display: inline-block;
     position:absolute;
-    padding-top: -2%;
+    padding-top: -3%;
      padding-left: 5px; 
-    font-size: 50px;
+    font-size: 30px;
     color: #d400ff;
     left: 46%;
     border: 1px solid;
@@ -50,7 +50,7 @@
     transition-delay: 1s;
     transition-duration: 1s;
   transition-timing-function:cubic-bezier(0.6, -0.30, 0.735, 0.075);
-     width: 280px;
+     width: 160px;
      height: 55px;
      background-color: #0f0f0f;
    
@@ -103,7 +103,7 @@
   }
   
   .heading{
-    font-size: clamp(80px, 6vw, 100px);
+    font-size: clamp(50px, 4vw, 60px);
    text-shadow: 1px 1px 15px  #4f4f4f ;
     word-spacing: 15px;
     color: #e8e8e8;
@@ -119,8 +119,8 @@
   }
   .linkpage{  
   
-    width:26%;
-    padding-top: 10%;
+    width:20%;
+    padding-top: 5%;
     position: relative;
   top: 5%;
   border: 0.1px groove;
@@ -128,7 +128,7 @@
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
     left: 2%;
-    height: 75%;
+    height: 65%;
    
     box-shadow: inset 1px 1px 20px rgb(101, 0, 101);
     font-family: "Kaisei Tokumin", serif;
@@ -140,10 +140,10 @@
     position: absolute;
     text-align: center;
     top: 5%;
-    left: 25%;
+    left: 35%;
     /* text-shadow: 0.5px 0.5px 5px #0800ef; */
     font-weight: 400;
-    font-size: clamp(70px, 6vw, 80px);
+    font-size: clamp(30px, 2vw, 45px);
     background: -webkit-linear-gradient(280deg,#909090 30% ,#0007c6 ,#e8e8e8 70% );
     background-clip: text;
     -webkit-background-clip: text;
@@ -164,7 +164,7 @@
   word-spacing: 15px;
    text-align: center;
     padding-top: 5%;
-    font-size: clamp(20px, 4vw, 50px);
+    font-size: clamp(20px, 2vw, 30px);
    
   }
   
@@ -191,16 +191,16 @@
   
   
   .profile{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     top: 5%;
     left: 73%;
     box-shadow: inset 1px 1px 20px #b600a7 ;
     border: 1px solid;
-    border-radius: 50px;
+    border-radius: 30px;
   position: absolute;
     background-image:url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/profile anime.png") ;
-    background-size: 200px;
+    background-size: 100px;
     background-repeat: no-repeat;
     background-position:  top  left;
     opacity: 1;
@@ -211,7 +211,7 @@
     left: 40%;
     top: 10%;
     color: #f1f1f1;
-    font-size: clamp(100px, 6vw, 150px);
+    font-size: clamp(70px, 3vw, 90px);
     font-family: "Neonderthaw", cursive;
     font-weight: 600;
     background: -webkit-linear-gradient(#480040 30%,#ff72f1 ,#e8e8e8  );
@@ -225,7 +225,7 @@
     left: 55%;
     top: 22%;
     color: #f1f1f1;
-    font-size: clamp(90px, 6vw, 104px);
+    font-size: clamp(60px, 3vw, 80px);
     font-family: "Neonderthaw", cursive;
     font-weight: 600;
     background: -webkit-linear-gradient(#52004a 5%,#e8e8e8 40%, #ff46ed 70%);
@@ -236,14 +236,14 @@
   }
   .about{
    
-   line-height: 105%;
+   line-height: 100%;
     position:absolute;
     left: 32%;
     width: 67% ;
     height: 60%;
     top: 37%;
     color: #f1f1f1;
-    font-size: clamp(50px, 5vw, 74px);
+    font-size: clamp(40px, 3vw, 50px);
     font-family: "Cookie", cursive;
     font-weight: 400;
     text-align: center;
