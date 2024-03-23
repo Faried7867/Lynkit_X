@@ -1,6 +1,6 @@
 
-@media screen and (min-width : 900px){
 
+/* @media screen  and (width <= 700px ) { */
 
   *{
     margin: 0;
@@ -8,6 +8,71 @@
     box-sizing: border-box;
   }
   
+  .island 
+  {
+    display: inline-block;
+    position:absolute;
+    left: 50%;
+    border-radius: 10px;
+   
+     width: 60px;
+     height: 60px;
+     background-color: #0f0f0f;
+     border: 1px solid;
+     border-top-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+     color: #0f0f0f;
+     
+  } 
+  .island::before{
+    content: "HI";
+    color: #909090;
+    font-size:50px ;
+   text-align: center;
+   
+    
+  }
+  
+
+  .aniend{
+    box-shadow: 0px 5px 35px black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    position:absolute;
+    padding-top: -2%;
+     padding-left: 5px; 
+    font-size: 50px;
+    color: #d400ff;
+    left: 46%;
+    border: 1px solid;
+    border-radius: 30px;
+    transition-delay: 1s;
+    transition-duration: 1s;
+  transition-timing-function:cubic-bezier(0.6, -0.30, 0.735, 0.075);
+     width: 280px;
+     height: 55px;
+     background-color: #0f0f0f;
+   
+    
+    
+     
+  }
+
+
+
+
+ 
+  /* @keyframes island {
+    from{
+    transform: scale(1);
+    
+    }to{
+      transform: scale(2);
+    }
+    
+}  */
+ 
   
   
   
@@ -16,31 +81,36 @@
     background-repeat: no-repeat;
     background-position: center ;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 2700px;
     background-color: #0f0f0f;
   }
   #parentpage{
     overflow: hidden;
     position: relative;
+    border-radius: 15px;
+    border: 1px solid rgb(176, 176, 176);
    
     max-width: 90vw;
     backdrop-filter: blur(20px);
     height: 93vh;
     margin-top: 1.5%;
-    border-radius: 25px;
-    box-shadow: inset 1px 1px 15px gray;
+   
+    box-shadow: inset 1px 1px 20px rgb(101, 0, 101);
     margin-inline: auto;
-    border: 1px solid rgb(176, 176, 176);
+   
+    
+   
   }
   
   .heading{
-    font-size: 70px;
+    font-size: clamp(80px, 6vw, 100px);
    text-shadow: 1px 1px 15px  #4f4f4f ;
     word-spacing: 15px;
     color: #e8e8e8;
     position: relative;
     font-family: "Kaisei Tokumin", serif;
-    left: 5%;
+    left: 10%;
+    top: 2%;
     background: -webkit-linear-gradient(#ffffff 40%, #1e00c5 75%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -48,26 +118,32 @@
   
   }
   .linkpage{  
-   
-    width:30%;
-    position: absolute;
-  top: 20%;
-    border-radius: 25px;
-    left: 5%;
+  
+    width:26%;
+    padding-top: 10%;
+    position: relative;
+  top: 5%;
+  border: 0.1px groove;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    left: 2%;
     height: 75%;
-    box-shadow: inset 0px 0px 20px gray;
-    border: 0.1px groove;
+   
+    box-shadow: inset 1px 1px 20px rgb(101, 0, 101);
     font-family: "Kaisei Tokumin", serif;
     color: #f1f1f1;
     background-color: #3e34345e;
   }
   .linkpage > h1{
     font-family: "Cookie", cursive;
-    position: relative;
+    position: absolute;
     text-align: center;
+    top: 5%;
+    left: 25%;
     /* text-shadow: 0.5px 0.5px 5px #0800ef; */
     font-weight: 400;
-    font-size:105px;
+    font-size: clamp(80px, 6vw, 120px);
     background: -webkit-linear-gradient(280deg,#909090 30% ,#0007c6 ,#e8e8e8 70% );
     background-clip: text;
     -webkit-background-clip: text;
@@ -88,7 +164,7 @@
   word-spacing: 15px;
    text-align: center;
     padding-top: 5%;
-    font-size: 40px;
+    font-size: clamp(20px, 4vw, 50px);
    
   }
   
@@ -103,11 +179,7 @@
    transition-duration: 500ms;
     
   }
-  span{
-    position: absolute;
-    font-size: 35px;left: 30px;
-    color:whitesmoke;
-  }
+ 
    a{
    
     color: #e8e8e8;
@@ -119,16 +191,16 @@
   
   
   .profile{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     top: 5%;
-    left: 75%;
+    left: 73%;
     box-shadow: inset 1px 1px 20px #b600a7 ;
     border: 1px solid;
     border-radius: 50px;
   position: absolute;
     background-image:url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/profile anime.png") ;
-    background-size: 250px;
+    background-size: 200px;
     background-repeat: no-repeat;
     background-position:  top  left;
     opacity: 1;
@@ -137,9 +209,9 @@
   .clock{
     position: absolute;
     left: 40%;
-    top: 0%;
+    top: 10%;
     color: #f1f1f1;
-    font-size: 150px;
+    font-size: clamp(100px, 6vw, 150px);
     font-family: "Neonderthaw", cursive;
     font-weight: 600;
     background: -webkit-linear-gradient(#480040 30%,#ff72f1 ,#e8e8e8  );
@@ -151,9 +223,9 @@
   .day{
     position: absolute;
     left: 55%;
-    top: 20%;
+    top: 22%;
     color: #f1f1f1;
-    font-size: 105px;
+    font-size: clamp(90px, 6vw, 104px);
     font-family: "Neonderthaw", cursive;
     font-weight: 600;
     background: -webkit-linear-gradient(#52004a 5%,#e8e8e8 40%, #ff46ed 70%);
@@ -163,14 +235,15 @@
      
   }
   .about{
-    line-height: 135%;
+   
+   line-height: 105%;
     position:absolute;
-    left: 37%;
-    width: 60% ;
+    left: 32%;
+    width: 67% ;
     height: 60%;
-    top: 40%;
+    top: 37%;
     color: #f1f1f1;
-    font-size: clamp(320%,60px,70px);
+    font-size: clamp(50px, 5vw, 74px);
     font-family: "Cookie", cursive;
     font-weight: 400;
     text-align: center;
@@ -180,13 +253,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
-
-}
 
 
-@media screen and (min-width : 380px) and (max-width : 550px )
+
+
+
+
+
+
+@media screen  and  (max-width : 500px)
 {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   body{
     height: 90dvh;
      
@@ -199,21 +280,74 @@
     background-size: 1700px;
     background-color: #0f0f0f;
   }
+  .island 
+  {
+    display: inline-block;
+    position:absolute;
+    left: 47%;
+    border-radius: 10px;
+    text-align: center;
+     width: 48px;
+     height: 48px;
+     background-color: #0f0f0f;
+     border: 1px solid;
+     border-top-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+     color: #0f0f0f;
+     
+  } 
+  .island::before{
+    content: "Hi";
+    color: #909090;
+    font-size:40px ;
+    margin-inline: auto;
+    transition-duration: 2s;
+    
+  }
+  
+
+  .aniend{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    position:absolute;
+    /* margin-inline: auto; */
+    box-shadow: 0px 2px 20px  #000000;
+    padding-left:-5%;
+    font-size: 30px;
+    color: #d400ff;
+    left: 28%;
+    border: 1px solid;
+    border-radius: 20px;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.6, -0.30, 0.735, 0.075);
+     width: 165px;
+     height: 34px;
+     background-color: #0f0f0f;
+   
+    
+    /* animation: island 1 ease-in ; */
+     
+  }
+
+  
   #parentpage{
     position: relative;
     width:93dvw;
     backdrop-filter: blur(20px);
-    height: 95dvh;
+    height: 96dvh;
     margin-top: 2%;
     border-radius: 25px;
     box-shadow: inset 1px 1px 15px gray;
     /* margin-inline: auto; */
-    left: 1%; 
+    left: 5%; 
     border: 1px solid rgb(176, 176, 176);
   }
   
   .heading{
-    font-size: 40px;
+    top: 7%;
+    font-size: 35px;
    text-shadow: 1px 1px 15px  #4f4f4f ;
     word-spacing: 15px;
     color: #e8e8e8;
@@ -232,7 +366,7 @@
    float: inline-start;
     width:95% ;
     position: relative;
-    margin-top: 35%;
+    top: 25%;
     border-radius: 30px;
     left: 2.5%;
     height: 16%;
@@ -253,7 +387,7 @@
     /* text-shadow: 0.5px 0.5px 5px #0800ef; */
     font-weight: 400;
     left: 35%;
-    top: -15%;
+    top: 25%;
     font-size:55px;
     background: -webkit-linear-gradient(280deg,#909090 30% ,#0007c6 ,#e8e8e8 70% );
     background-clip: text;
@@ -272,9 +406,10 @@
   .linkpage > h3{
     font-weight: 400;
     position: relative;
-    top: -30%;
+    top: -60%;
+    padding-bottom: 15%;
   
-padding-left: 40px;
+padding-left: 45px;
 
 font-size: 20px;
    text-align: left;
@@ -304,16 +439,16 @@ font-size: 20px;
   
   
   .profile{
-    width: 120px;
-    height: 120px;
-    top: 3%;
+    width: 110px;
+    height: 110px;
+    top: 8%;
     left: 62%;
     box-shadow: inset 1px 1px 20px #b600a7 ;
     border: 1px solid;
     border-radius: 20px;
   position: absolute;
     background-image:url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/profile anime.png") ;
-    background-size: 130px;
+    background-size: 110px;
     background-repeat: no-repeat;
     background-position:  top  left;
     opacity: 1;
@@ -321,13 +456,13 @@ font-size: 20px;
   }
   .clock{
     position: absolute;
-    left: 5%;
-    top: -2%;
+    left: 10%;
+    top: 12%;
     color: #f1f1f1;
-    font-size: 75px;
+    font-size: 65px;
     font-family: "Neonderthaw", cursive;
     font-weight: 600;
-    background: -webkit-linear-gradient(#ff4eed 40%,#e8e8e8 70% );
+    background: -webkit-linear-gradient(#ff4eed  ,#e8e8e8 10  ,purple 20% );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -335,20 +470,20 @@ font-size: 20px;
   }
   .day{
     position: absolute;
-    left: 20%;
-    top: 15%;
+    left: 30%;
+    top: 23%;
     color: #f1f1f1;
-    font-size: 55px;
+    font-size: 50px;
     font-family: "Neonderthaw", cursive;
     font-weight: 600;
-    background: -webkit-linear-gradient(#8a8a8a 50%, #ff63ef 50%);
+    background: -webkit-linear-gradient(#d400b8be 50%, #910082 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
      
   }
   .about{
-    line-height: 110%;
+    line-height: 115%;
     position:absolute;
     left: 7%;
     width: 90% ;
@@ -360,7 +495,252 @@ font-size: 20px;
     font-weight: 400;
     text-align: center;
     word-spacing: 10px;
-    background: -webkit-linear-gradient(280deg,#fff5f5 30%,rgb(62, 62, 62), #410046 60%);
+    background: -webkit-linear-gradient(280deg,#fff5f5 0%,rgb(251, 121, 255), #410046 30%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}}
+
+
+ @media screen  and (min-width : 700px) and  (max-width : 950px) 
+ {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    height: 90dvh;
+     
+  width: 90dvw;
+  overflow: hidden;
+    background-image: url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/bg.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: 1100px;
+    background-color: #0f0f0f;
+  }
+  .island 
+  {
+    display: inline-block;
+    position:absolute;
+    left: 50%;
+    border-radius: 10px;
+    text-align: center;
+     width: 48px;
+     height: 48px;
+     background-color: #0f0f0f;
+     border: 1px solid;
+     border-top-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+     color: #0f0f0f;
+     
+  } 
+  .island::before{
+    content: "Hi";
+    color: #909090;
+    font-size:40px ;
+    margin-inline: auto;
+    transition-duration: 2s;
+    
+  }
+  
+
+  .aniend{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    position:absolute;
+    /* margin-inline: auto; */
+    box-shadow: 0px 3px 20px  #000000;
+    padding-left:-5%;
+    font-size: 30px;
+    color: #d400ff;
+    left: 36%;
+    border: 1px solid;
+    border-radius: 20px;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    transition-timing-function:cubic-bezier(0.6, -0.30, 0.735, 0.075);
+     width: 165px;
+     height: 34px;
+     background-color: #0f0f0f;
+   
+    
+    /* animation: island 1 ease-in ; */
+     
+  }
+
+  
+  #parentpage{
+    position: relative;
+    width:93dvw;
+    backdrop-filter: blur(20px);
+    height: 97dvh;
+    margin-top: 1%;
+    border-radius: 25px;
+    box-shadow: inset 1px 1px 15px gray;
+    /* margin-inline: auto; */
+    left: 5%; 
+    border: 1px solid rgb(176, 176, 176);
+  }
+  
+  .heading{
+    top: 2%;
+    font-size: 35px;
+   text-shadow: 1px 1px 15px  #4f4f4f ;
+    word-spacing: 15px;
+    color: #e8e8e8;
+    position: relative;
+    font-family: "Kaisei Tokumin", serif;
+    left: 5%;
+    background: -webkit-linear-gradient(#ffffff 40%, #1e00c5 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+  .linkpage{  
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+    flex-direction: row;
+   float: inline-start;
+    width:70% ;
+   height: 20%;
+    position: relative;
+    top: 15%;
+    border-radius: 30px;
+    left: 5%;
+    
+    box-shadow: inset 0px 0px 20px gray;
+    border: 0.1px groove;
+    font-family: "Kaisei Tokumin", serif;
+    color: #f1f1f1;
+    background-color: #3e34345e;
+  }
+
+  
+
+
+  .linkpage > h1{
+    font-family: "Cookie", cursive;
+    position: absolute;
+    text-align: center;
+    /* text-shadow: 0.5px 0.5px 5px #0800ef; */
+    font-weight: 400;
+    left: 35%;
+    top: -65%;
+    font-size:55px;
+    background: -webkit-linear-gradient(280deg,#909090 30% ,#0007c6 ,#e8e8e8 70% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+  }
+  
+       
+    
+  
+  
+  
+  
+  
+  .linkpage > h3{
+    /* text-align: justify; */
+    font-weight: 400;
+    position: relative;
+    top: -50px;
+    /* padding-bottom: -5%; */
+  
+/* padding-left: 45px; */
+
+font-size: 20px;
+   /* text-align: left; */
+  }
+ 
+  
+  h3:hover a {
+    width: 10px;
+    color: #ff00e6;
+    text-shadow: 0px 0px 1px white;
+    border: none;
+    border-radius: 10px;
+    
+  
+   transition-duration: 500ms;
+    
+  }
+ 
+   a{
+   
+    color: #e8e8e8;
+    font-weight: 400;
+   margin-inline: auto;
+   text-decoration: none;
+  
+  }
+  
+  
+  .profile{
+    width: 110px;
+    height: 110px;
+    top: 8%;
+    left: 80%;
+    box-shadow: inset 1px 1px 20px #b600a7 ;
+    border: 1px solid;
+    border-radius: 20px;
+  position: absolute;
+    background-image:url("C:\Users\ffari\OneDrive\Desktop\sass/reactprojectfiles/linkpage/public/profile anime.png") ;
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position:  top  left;
+    opacity: 1;
+    
+  }
+  .clock{
+    position: absolute;
+    left: 5%;
+    top:12%;
+    color: #f1f1f1;
+    font-size: 50px;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#ff4eed  ,#e8e8e8 10  ,purple 20% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     
+  }
+  .day{
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    color: #f1f1f1;
+    font-size: 35px;
+    font-family: "Neonderthaw", cursive;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#d400b8be 50%, #910082 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     
+  }
+  .about{
+    line-height: 100%;
+    position:absolute;
+    left: 7%;
+    width: 90% ;
+    height: 60%;
+    top: 57%;
+    color: #f1f1f1;
+    font-size: clamp(30px,32px,50px);
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    text-align: center;
+    word-spacing: 10px;
+    background: -webkit-linear-gradient(280deg,#fff5f5 0%,rgb(251, 121, 255), #410046 30%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

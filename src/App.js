@@ -1,11 +1,11 @@
 import React from 'react';
-import { motion ,spring } from 'framer-motion';
+import { animate, motion ,onAnimationComplete } from 'framer-motion';
 import ReactDOM from 'react-dom/client';
-import { useState ,useEffect } from 'react';
+import { useState ,useEffect ,useRef } from 'react';
 import './App.css';
 
 function App() {
-
+let myref =useRef()
 
 const [clock,update]=useState(new Date())
 
@@ -28,12 +28,32 @@ const months = [
   "Jan","Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov",
   "Dec"
 ];
-console.log(onmouseover)
+
+let aniEnd = ()=>{
+  myref.current.className="aniend";
+  myref.current.innerText="I'm Farie";
+  console.log(myref.current.style)
+  // let enter =()=>{
+  //   myref.current.className="start";
+  // }
+};
+
 
   return (
     <div  id='parentpage'>
+     <motion.div
+    
+    ref={myref}
+      initial={{opacity:0,Y:15}}
+      animate={{opacity:1,y:8}}
+  
+      transition={{duration:0.5,delay:1,ease: "easeInOut"}}
+      onAnimationComplete={ aniEnd } 
+   
+
+      className='island'></motion.div> 
         <div className="profile"></div>
-      <h1 className="heading">LinKit  X</h1>
+      <h1 className="heading">LynKit_X</h1>
      <motion.p  initial={{opacity:0,x:20}}
      animate={{opacity:[0,0.5,1],x:0}}
      transition={{duration:0.5,delay:1}}className='clock'>{`${time > 12 ?  time - 12 : time} : ${min < 10 ? "0" + min : min }  `}</motion.p>
@@ -51,7 +71,7 @@ This page conveniently connects all my contact links in one place. If you find t
       <motion.div 
       initial={{opacity:0,x:-40}}
       animate={{opacity:[0,0.5,1],x:0}}
-      transition={{duration:1,delay:0}}
+      transition={{duration:3,delay:0}}
       className="linkpage">
 
         < motion.h1  initial={{opacity:0}}
